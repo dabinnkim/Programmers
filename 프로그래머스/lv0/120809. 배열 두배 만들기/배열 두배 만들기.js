@@ -1,5 +1,5 @@
 function solution(numbers) {
-    return numbers.map(a=>a*2)
+    return numbers.map(num => num*2)
 }
 
 console.log(solution([1,2,3]))
