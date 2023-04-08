@@ -1,19 +1,9 @@
-function solution(age) {
-    
-    let alpha = {
-        0 : "a",
-        1 : "b",
-        2 : "c",
-        3 : "d",
-        4 : "e",
-        5 : "f",
-        6 : "g",
-        7 : "h",
-        8 : "i",
-        9 : "j"
-    }
-    
-    let newAge = age + "";
-    
-    return newAge.split("").map((el) => alpha[el]).join("");
+function solution(age){
+  return age.toString().split('').map((e)=>'abcdefghij'[e]).join('')
 }
+
+/*
+age를 문자열로 바꾸고 split()으로 배열에 넣고
+map으로 배열의 요소를 하나씩 꺼내서 알파벳의 인덱스로 주고
+join()으로 배열을 문자열로 바꿈
+*/
