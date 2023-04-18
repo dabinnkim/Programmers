@@ -1,16 +1,5 @@
+const 팩토리얼 = (num) => num === 0 ? 1 : num * 팩토리얼(num - 1)
+
 function solution(balls, share) {
-    var answer = 0;
-    function factorial(n) {
-        var x = BigInt(0)
-        var y = BigInt(1)
-        while (x < n) {
-            x += BigInt(1)
-            y *= x
-        }
-        return y
-    }
-    
-    
-    answer = factorial(balls) / (factorial(share) * factorial(balls-share))
-    return answer;
+  return Math.round(팩토리얼(balls) / 팩토리얼(balls - share) / 팩토리얼(share))
 }
