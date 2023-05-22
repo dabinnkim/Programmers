@@ -1,4 +1,4 @@
-function solution(numbers) {
-    const arr = numbers.sort((a,b)=>b-a) //내림차순
-    return arr[0]*arr[1]
+function solution(num){
+    const arr = num.sort((a,b)=>b-a)   
+    return arr[0] * arr[1]
 }
